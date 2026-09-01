@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "moduleResolution": "bundler",
+    "allowJs": true,
+    "checkJs": false,
+    "strict": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@client/*": [
+        "./foundry/client/*"
+      ],
+      "@common/*": [
+        "./foundry/common/*"
+      ],
+      "@root/*": [
+        "./src/*"
+      ],
+      "@foundry/*": [
+        "./foundry/*"
+      ]
+    }
+  },
+  "include": [
+    "types/**/*",
+    "src/**/*",
+    "foundry/client/client.mjs",
+    "foundry/**/*.d.mts"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "foundry/tsconfig.json",
+    "**/dist"
+  ]
+}

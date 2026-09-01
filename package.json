@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "version": "dev",
+  "name": "command-interface",
+  "source": "src/command-interface.mjs",
+  "main": "src/command-interface.mjs",
+  "type": "module",
+  "engines": {
+    "bun": ">=1.3"
+  },
+  "root": true,
+  "browserslist": [
+    "chrome 146",
+    "firefox 150",
+    "electron 41.3"
+  ],
+  "lint-staged": {
+    "*.mjs": "eslint --quiet --fix",
+    "*.d.ts": "eslint --quiet --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^10.8.1",
+    "eslint-plugin-jsdoc": "^64.2.0",
+    "globals": "^17.11.0",
+    "husky": "^9.1.7",
+    "lightningcss": "^1.33.0",
+    "lint-staged": "^17.3.0",
+    "picocolors": "^1.1.1",
+    "rolldown": "^1.2.4",
+    "typescript-eslint": "^8.67.0"
+  },
+  "scripts": {
+    "build": "npm --prefix=tooling run all",
+    "js": "npm --prefix=tooling run js",
+    "css": "npm --prefix=tooling run css"
+  },
+  "workspaces": [
+    "tooling"
+  ],
+  "build": {
+    "dist": "dist",
+    "manifest": "module.json",
+    "css": {
+      "path": "css/command.css"
+    },
+    "js": {
+      "path": "src/command.mjs"
+    }
+  }
+}

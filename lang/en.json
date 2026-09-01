@@ -1,0 +1,9 @@
+{
+	"CommandInterface": {
+		"Controls": {
+			"Open": {
+				"Label": "Open interface"
+			}
+		}
+	}
+}

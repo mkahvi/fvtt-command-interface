@@ -1,0 +1,13 @@
+body>#command-interface {
+	display: flex;
+	position: fixed;
+
+	top: 20%;
+	width: 100%;
+
+	background: red;
+
+	z-index: 200;
+
+	justify-content: center;
+}
